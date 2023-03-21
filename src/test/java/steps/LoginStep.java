@@ -27,9 +27,9 @@ public class LoginStep  {
     }
 
 
-    @Quando("insiro meu e-mail")
-    public void insir_email() {
-        enviarEmail();
+    @Quando("insiro meu e-mail {string}")
+    public void insir_email(String email) {
+        enviarEmail( email);
     }
 
     @Quando("dou um click no botao entrar")

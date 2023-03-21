@@ -12,8 +12,7 @@ public class Utils extends RunnerTest {
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    public static String findEmail() {
-        String email = "vivi29emi@gmail.com";
+    public static String findEmail(String email) {
         return email;
     }
 

@@ -15,8 +15,8 @@ public class LoginPage extends RunnerTest {
         driver.get( "http://automationpratice.com.br/#search");
     }
 
-    public static void enviarEmail(){
-        driver.findElement(By.cssSelector("#mc_embed_signup > form > div > input")).sendKeys(findEmail());
+    public static void enviarEmail(String email){
+        driver.findElement(By.cssSelector("#mc_embed_signup > form > div > input")).sendKeys(findEmail(email));
     }
 
     public static void clickButton(){
